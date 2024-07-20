@@ -1,0 +1,49 @@
+<!-- Author: Khyrstina Smith -->
+<!-- File: gallery.html -->
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mars Rover Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+    <img class="hero-image" src="/nasa-mars.jpg" alt="Hero Image">
+    <h1>Images</h1>
+</header>
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>&nbsp|&nbsp
+        <li><a href="about.html">About</a></li>|&nbsp
+        <li><a href="gallery.html">Search</a></li>|&nbsp
+        <li><a href="contact.html">Contact</a></li>|&nbsp
+        <li><a href="media.html">Media</a></li>
+    </ul>
+    <ul>
+        <li><a href="https://api.nasa.gov/" target="_blank">Documentation: NASA Mars Rover API</a></li>|&nbsp
+        <li><a href="mailto:ksmith1798@kctcs.edu" target="_blank">Email Me</a></li>|&nbsp
+        <li><a href="https://science.nasa.gov/mars/" target="_blank">More on Mars</a></li>
+    </ul>
+</nav>
+<main>
+    <section>
+        <h2>Image Search</h2>
+        <label for="datePicker">Select Date:</label>
+        <input type="date" id="datePicker" name="datePicker" max="" onchange="fetchImages()">
+        <div id="imageContainer">
+            <button id="prevButton" onclick="navigateImages(-1)">Previous</button>
+            <img id="roverImage" src="" alt="Mars Rover Image">
+            <button id="nextButton" onclick="navigateImages(1)">Next</button>
+        </div>
+    </section>
+</main>
+<footer>
+    <p>Check out our <a href="your_github_pages_link">GitHub Pages</a> for more!</p>
+</footer>
+<script src="main.js"></script>
+</body>
+</html>
+

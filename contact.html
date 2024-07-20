@@ -1,0 +1,87 @@
+<!-- Author: Khyrstina Smith -->
+<!-- File: contact.html -->
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contact</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+    <img class="hero-image" src="/nasa-mars.jpg" alt="Hero Image">
+    <h1>Contact Me</h1>
+</header>
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>&nbsp|&nbsp
+        <li><a href="about.html">About</a></li>|&nbsp
+        <li><a href="gallery.html">Search</a></li>|&nbsp
+        <li><a href="contact.html">Contact</a></li>|&nbsp
+        <li><a href="media.html">Media</a></li>
+    </ul>
+    <ul>
+        <li><a href="https://api.nasa.gov/" target="_blank">Documentation: NASA Mars Rover API</a></li>|&nbsp
+        <li><a href="mailto:ksmith1798@kctcs.edu" target="_blank">Email Me</a></li>|&nbsp
+        <li><a href="https://science.nasa.gov/mars/" target="_blank">More on Mars</a></li>
+    </ul>
+</nav>
+<main>
+    <section class="contactForm">
+        <form action="#">
+            <div class="question">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name"><br>
+            </div>
+
+            <div class="question">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email"><br>
+            </div>
+                <div class="question">
+                    <label>Age Range:</label><br>
+                    <input type="radio" id="age1" name="age" value="under18">
+                    <label for="age1">Under 18</label>
+                    <input type="radio" id="age2" name="age" value="18-25">
+                    <label for="age2">18-25</label>
+                    <input type="radio" id="age3" name="age" value="26-35">
+                    <label for="age3">26-35</label>
+                    <input type="radio" id="age4" name="age" value="36-45">
+                    <label for="age4">36-45</label>
+                    <input type="radio" id="age5" name="age" value="46plus">
+                    <label for="age5">46+</label><br>
+                </div>
+                <div class="question">
+                    <label>Which Mars Rovers are you interested in:</label><br>
+                    <input type="checkbox" id="spirit" name="rovers" value="spirit">
+                    <label for="spirit">Spirit</label>
+                    <input type="checkbox" id="opportunity" name="rovers" value="opportunity">
+                    <label for="opportunity">Opportunity</label>
+                    <input type="checkbox" id="curiosity" name="rovers" value="curiosity">
+                    <label for="curiosity">Curiosity</label>
+                    <input type="checkbox" id="perseverance" name="rovers" value="perseverance">
+                    <label for="perseverance">Perseverance</label><br>
+                </div>
+                <div class="question">
+                    <label for="country">Country:</label>
+                    <select id="country" name="country">
+                        <option value="us">United States</option>
+                        <option value="ca">Canada</option>
+                        <option value="uk">United Kingdom</option>
+                        <option value="au">Australia</option>
+                        <option value="other">Other</option>
+                    </select><br>
+                </div>
+            <input type="submit" value="Submit" class="submitButton">
+        </form>
+    </section>
+</main>
+<footer>
+    <p>Check out our <a href="your_github_pages_link">GitHub Pages</a> for more!</p>
+</footer>
+</body>
+</html>
+

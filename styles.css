@@ -1,0 +1,234 @@
+/* Author: Khyrstina Smith */
+/* File: styles.css */
+
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: rgb(2,0,36);
+    background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgb(2, 53, 62) 100%);
+    color: whitesmoke;
+}
+
+header {
+    color: #fff;
+    text-align: center;
+    border-radius: 8px;
+    position: relative;
+    height: 300px;
+    overflow: hidden;
+}
+.hero-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+main {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+img {
+    border-radius: 10px;
+}
+/* Image search */
+
+#imageContainer {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#imageContainer img {
+    width: 600px; /* Fixed size to prevent jumping */
+    height: 400px; /* Fixed size to prevent jumping */
+    object-fit: cover; /* Ensure images maintain aspect ratio */
+    border-radius: 15px;
+}
+
+#prevButton, #nextButton {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#prevButton {
+    left: 10px;
+}
+
+#nextButton {
+    right: 10px;
+}
+
+#prevButton:hover, #nextButton:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+
+footer {
+    background: rgba(51, 51, 51, 0.68);
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+    bottom: 0;
+    width: 100%;
+    margin-top: 2rem;
+    border-radius: 8px;
+}
+h1 {
+    font-weight: 700;
+    font-size: 8rem;
+    position: absolute;
+    text-shadow: -15px 5px 20px #ced0d3;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #F9f1cc;
+    text-shadow: 5px 5px 0px orange,
+    10px 10px 0px  orangeRed,
+    15px 15px 0px blue
+
+}
+ h2, h3 {
+    color: lightskyblue;
+}
+/* Styling for centered sections */
+.centeredSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+    padding: 1.5rem;
+    text-align: left;
+    width: 75%;
+    background: rgba( 255, 255, 255, 0.3 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+/* Styling for Links */
+a {
+    all: unset;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #253e59;
+    cursor: pointer;
+    background-color: cornflowerblue;
+    border-radius: 8px;
+    padding: .5rem;
+}
+
+/* Styling for table */
+table {
+    margin-bottom: 1rem;
+}
+table, th, td {
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+
+th {
+    background-color: rgba(21, 21, 21, 0.45);
+}
+th, td, tr {
+    padding: 1rem;
+}
+
+tr .green {
+    background-color: #014701;
+}
+
+tr .orange {
+    background-color: #b93004;
+}
+
+/* Styling for contact form */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+}
+.contactForm {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    background: rgba( 255, 255, 255, 0.3 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+.question {
+    padding-bottom: 1rem;
+    width: 90%;
+    flex-wrap: nowrap;
+}
+
+/* Styling for Button */
+.submitButton {
+    padding: 15px;
+    font-size: 0.9em;
+    font-weight: 700;
+    letter-spacing: 5px;
+    transition: all 0.3s ease-in-out 0s;
+    width: 180px;
+    color: #e1f3f8;
+    background: #5b616b;
+}
+
+.submitButton:hover {
+    left: 4px;
+    top: 4px;
+    background: whitesmoke;
+    color: #0b3d91;
+}
+
+/* Media Queries */
+@media (max-width: 600px) {
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+}
